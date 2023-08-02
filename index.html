@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunbaseData Project</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--*****************************************************************************************************************************************************************-->
+    <!--Login Screen-->
+    <div id="login-screen">
+      <div class="form-area">
+        <h1>Login Page</h1>
+        <form id="form-data">
+          <input
+            type="text"
+            id="login"
+            name="login"
+            placeholder="Login Id"
+            required
+          />
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            placeholder="Password"
+            required
+          />
+          <button id="login-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!--*****************************************************************************************************************************************************************-->
+    <!-- Customer List Screen -->
+
+    <div id="customer-list-screen" style="display: none">
+      <h1>Customer List</h1>
+      <button id="add-customer-btn">Add Customer</button>
+      <table id="customer-table">
+        <!-- Customer list will be displayed here -->
+      </table>
+    </div>
+
+    <!--*****************************************************************************************************************************************************************-->
+    <!--Customer Form Screen-->
+
+    <div id="customer-form-screen" style="display: none">
+      <h1>Customer Details</h1>
+      <form id="customer-form">
+        <input
+          type="text"
+          id="first-name"
+          name="first_name"
+          placeholder="First Name"
+          required
+        />
+        <input
+          type="text"
+          id="last-name"
+          name="last_name"
+          placeholder="Last Name"
+          required
+        />
+        <input type="text" id="street" name="street" placeholder="Street" />
+        <input type="text" id="address" name="address" placeholder="Address" />
+        <input type="text" id="city" name="city" placeholder="City" />
+        <input type="text" id="state" name="state" placeholder="State" />
+        <input type="text" id="email" name="email" placeholder="Email" />
+        <input type="text" id="phone" name="phone" placeholder="Phone" />
+        <button type="submit" id="customerForm-btn">Submit</button>
+      </form>
+    </div>
+    <!--*****************************************************************************************************************************************************************-->
+
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
